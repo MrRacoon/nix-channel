@@ -1,5 +1,5 @@
 let
-  sources = imports ./nix/sources.nix;
+  sources = import ./nix/sources.nix;
 
   ohai = pkgs.writeShellScriptBin "hello" ''
     echo "Ohai there!"
